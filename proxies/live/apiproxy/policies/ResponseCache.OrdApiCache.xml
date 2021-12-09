@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResponseCache async="false" continueOnError="false" enabled="true" name="ResponseCache.OrdApiCache">
+  <DisplayName>ResponseCache.OrdApiCache</DisplayName>
+  <Properties/>
+  <CacheKey>
+    <Prefix/>
+    <KeyFragment ref="request.uri"/>
+  </CacheKey>
+  <Scope>Exclusive</Scope>
+  <ExpirySettings>
+    <ExpiryDate/>
+    <TimeOfDay/>
+    <TimeoutInSeconds>1800</TimeoutInSeconds>
+  </ExpirySettings>
+  <CacheResource>ord-api-cache</CacheResource>
+  <CacheLookupTimeoutInSeconds/>
+  <ExcludeErrorResponse>false</ExcludeErrorResponse>
+  <SkipCacheLookup/>
+  <SkipCachePopulation/>
+  <UseAcceptHeader>false</UseAcceptHeader>
+  <UseResponseCacheHeaders/>
+</ResponseCache>

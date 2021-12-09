@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessage.SetCacheTimeout">
+  <DisplayName>AssignMessage.SetCacheTimeout</DisplayName>
+  <AssignVariable>
+    <Name>cache_timeout</Name>
+    <Value>30</Value>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,29 @@
+## Manifest template ##
+# To view the expanded version of this template locally, clone api-management-utils
+#
+#   $ cd /path/to/local/api-management-utils/ansible
+#   $ DIST_DIR=/path/to/this/repo make template-manifest
+#
+#
+APIGEE_ENVIRONMENTS:
+- name: internal-dev
+- name: internal-qa
+- name: ref
+- name: int
+- name: prod
+---
+meta:
+  api:
+    name: organisation-reference-data
+    guid: b7425c47-887b-4614-b80c-bd0d85630f67
+    spec_guids: ['9b5886c6-e4ab-4e2c-82cc-f7bcc7e9bdb3']
+  schema_version: 1
+apigee:
+  environments:
+
+{% for ENV in APIGEE_ENVIRONMENTS %}
+  - name: {{ ENV.name }}
+    products: []
+    specs: []
+    api_catalog: []
+{% endfor %}

@@ -1,0 +1,4 @@
+variables:
+  service_name: organisation-reference-data
+  service_base_path: ORD
+  short_service_name: ord
