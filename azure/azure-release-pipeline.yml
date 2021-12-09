@@ -13,7 +13,7 @@ resources:
 
   pipelines:
   - pipeline: build_pipeline
-    source: "OrdApiCache-Build"
+    source: "Organisation-Reference-Data-Build"
     trigger:
       branches:
         include:
