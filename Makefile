@@ -35,6 +35,11 @@ clean-reports:
 	rm -rf ./reports || true
 
 build: clean-build
+	mkdir -p ./build
+	for dir in $(proxies); do \
+		make --no-print-directory -C proxies/$${dir} build & \
+	done; \
+	wait;
 
 build-proxy: build
 
