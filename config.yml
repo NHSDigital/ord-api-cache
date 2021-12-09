@@ -1,0 +1,15 @@
+x-meta:
+  service_name: ord-api-cache
+  short_service_name: ord-api-cache
+  service_base_path: ORD
+  product_display_name: ORD API Cache
+  product_description: ORD API Cache
+  pipeline_name_prefix: OrdApiCache
+x-nhs-api-spec-guid: feefb424-d322-4796-ba18-5c5d7b3a5bc8
+meta:
+  
+  api:
+    name: ord-api-cache
+    guid: d26867e6-ec58-4bea-999d-3b7de6f3743e
+    spec_guids: ['feefb424-d322-4796-ba18-5c5d7b3a5bc8']
+  schema_version: 1

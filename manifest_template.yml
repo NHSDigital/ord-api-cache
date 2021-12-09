@@ -1,0 +1,29 @@
+## Manifest template ##
+# To view the expanded version of this template locally, clone api-management-utils
+#
+#   $ cd /path/to/local/api-management-utils/ansible
+#   $ DIST_DIR=/path/to/this/repo make template-manifest
+#
+#
+APIGEE_ENVIRONMENTS:
+- name: internal-dev
+- name: internal-qa
+- name: ref
+- name: int
+- name: prod
+---
+meta:
+  api:
+    name: ord-api-cache
+    guid: d26867e6-ec58-4bea-999d-3b7de6f3743e
+    spec_guids: []
+  schema_version: 1
+apigee:
+  environments:
+
+{% for ENV in APIGEE_ENVIRONMENTS %}
+  - name: {{ ENV.name }}
+    products: []
+    specs: []
+    api_catalog: []
+{% endfor %}
