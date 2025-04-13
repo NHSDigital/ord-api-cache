@@ -1,6 +1,6 @@
 [project]
 python = "^3.9"
-
+name = "ord-api-cache"
 
 [tool.poetry]
 name = "ord-api-cache"
