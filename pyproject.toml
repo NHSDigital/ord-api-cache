@@ -1,6 +1,6 @@
 [project]
-python = "^3.8"
-
+python = "^3.9"
+name = "ord-api-cache"
 
 [tool.poetry]
 name = "ord-api-cache"
@@ -16,23 +16,23 @@ authors = [
 readme = 'README.md'
 
 repository = "https://github.com/NHSDigital/ord-api-cache"
-homepage = ""
+homepage = "https://github.com/NHSDigital/ord-api-cache"
 
 keywords = ["healthcare", "uk", "nhs"]
-
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 pyyaml = "^5.2"
 docopt = "^0.6.2"
 jsonpath-rw = "^1.4.0"
 semver = "^2.9.0"
-gitpython = "^3.0.5"
+gitpython = "^3.1.32"
 
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
-aiohttp = "^3.7.3"
+aiohttp = "^3.9.4"
 pytest-asyncio = "^0.14.0"
 coverage = "^5.3"
 flake8 = "^3.7.9"
