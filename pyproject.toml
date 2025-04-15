@@ -1,7 +1,5 @@
 [project]
 python = "^3.9"
-pytest-nhsd-apim = "^4.0.1"
-requests = "^2.32.3"
 name = "ord-api-cache"
 
 [tool.poetry]
@@ -30,6 +28,7 @@ docopt = "^0.6.2"
 jsonpath-rw = "^1.4.0"
 semver = "^2.9.0"
 gitpython = "^3.1.32"
+pytest-nhsd-apim = "^4.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
