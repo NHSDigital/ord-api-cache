@@ -16,7 +16,7 @@ updates:
         update-types: ["version-update:semver-major"]
 
   # ---------------------------
-  # GitHub Actions
+  # GitHub Actions updates
   # ---------------------------
   - package-ecosystem: "github-actions"
     directory: "/"
